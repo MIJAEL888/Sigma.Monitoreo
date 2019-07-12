@@ -1,0 +1,38 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.sigma"
+    },
+    "jhipsterVersion": "6.1.2",
+    "applicationType": "microservice",
+    "baseName": "monitoreo",
+    "packageName": "com.sigma",
+    "packageFolder": "com/sigma",
+    "serverPort": "8084",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "gradle",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "MGVmOWFiMzkxNjA3ZWRjMjU3OGUwNWQ4Y2M5N2I4M2FiOTJkNTNmMmM4ZTdlMmQwYzdiYzc5MzIxNDEzYjRiOGQ5MjJlNWEzNjY1ZjAxMWZmNWY2MmE2N2VmNTM4NGFjZmNhNTNiNzUzNGJmYWQwMjM3OTUyY2Y5NDI4NjY2M2Q=",
+    "testFrameworks": [
+      "gatling",
+      "cucumber"
+    ],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "clientPackageManager": "npm",
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}
