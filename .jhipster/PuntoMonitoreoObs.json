@@ -1,0 +1,66 @@
+{
+    "name": "PuntoMonitoreoObs",
+    "fields": [
+        {
+            "fieldName": "codigo",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "descripcion",
+            "fieldType": "byte[]",
+            "fieldTypeBlobContent": "text"
+        },
+        {
+            "fieldName": "comentario",
+            "fieldType": "byte[]",
+            "fieldTypeBlobContent": "text"
+        },
+        {
+            "fieldName": "observacion",
+            "fieldType": "byte[]",
+            "fieldTypeBlobContent": "text"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "puntoMonitoreo",
+            "otherEntityName": "puntoMonitoreo",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "resultado",
+            "otherEntityRelationshipName": "puntoMonitoreoObs",
+            "relationshipName": "resultado",
+            "otherEntityField": "id",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "fotografiaMonitoreo",
+            "otherEntityRelationshipName": "puntoMonitoreoObs",
+            "relationshipName": "fotografiaMonitoreo"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "proyecto",
+            "otherEntityRelationshipName": "puntoMonitoreo",
+            "relationshipName": "proyecto",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190713071434",
+    "entityTableName": "punto_monitoreo_obs",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "monitoreo",
+    "applications": "*",
+    "microserviceName": "monitoreo"
+}

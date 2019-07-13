@@ -1,0 +1,40 @@
+{
+    "name": "EquipoMonitoreo",
+    "fields": [
+        {
+            "fieldName": "codigoEquipo",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "reservadoDesde",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "reservadoHasta",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "documentoCalibracion",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "proyecto",
+            "otherEntityRelationshipName": "equipo",
+            "relationshipName": "proyecto",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190713071426",
+    "entityTableName": "equipo_monitoreo",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "monitoreo",
+    "applications": "*",
+    "microserviceName": "monitoreo"
+}

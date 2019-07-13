@@ -1,0 +1,36 @@
+{
+    "name": "Unidades",
+    "fields": [
+        {
+            "fieldName": "nombre",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "codigo",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "descripcion",
+            "fieldType": "byte[]",
+            "fieldTypeBlobContent": "text"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "paramentro",
+            "otherEntityRelationshipName": "unidades",
+            "relationshipName": "paramentro"
+        }
+    ],
+    "changelogDate": "20190713071437",
+    "entityTableName": "unidades",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "monitoreo",
+    "applications": "*",
+    "microserviceName": "monitoreo"
+}

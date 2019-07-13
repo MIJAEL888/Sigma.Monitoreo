@@ -1,0 +1,51 @@
+{
+    "name": "ResultadoEmisiones",
+    "fields": [
+        {
+            "fieldName": "tipoEquipo",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "combustible",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "consumo",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "horaPorMes",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "altura",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "diametro",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "seccion",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "resultado",
+            "otherEntityName": "resultado",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190713071439",
+    "entityTableName": "resultado_emisiones",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "monitoreo",
+    "applications": "*",
+    "microserviceName": "monitoreo"
+}

@@ -1,0 +1,60 @@
+{
+    "name": "NormaCalidad",
+    "fields": [
+        {
+            "fieldName": "nombre",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "codigo",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "fechaPublicacion",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "tipo",
+            "fieldType": "TipoNorma",
+            "fieldValues": "NACIONAL,INTERNACIONAL"
+        },
+        {
+            "fieldName": "fuente",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "rutaDocNorma",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "nombreDocNorma",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "documentoNorma",
+            "fieldType": "byte[]",
+            "fieldTypeBlobContent": "any"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "paramentro",
+            "otherEntityRelationshipName": "normaCalidad",
+            "relationshipName": "paramentro"
+        }
+    ],
+    "changelogDate": "20190713071432",
+    "entityTableName": "norma_calidad",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "monitoreo",
+    "applications": "*",
+    "microserviceName": "monitoreo"
+}

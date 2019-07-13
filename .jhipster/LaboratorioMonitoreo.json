@@ -1,0 +1,31 @@
+{
+    "name": "LaboratorioMonitoreo",
+    "fields": [
+        {
+            "fieldName": "codigoLaboratorio",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "fechaReseva",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "proyecto",
+            "otherEntityName": "proyecto",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190713071427",
+    "entityTableName": "laboratorio_monitoreo",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "monitoreo",
+    "applications": "*",
+    "microserviceName": "monitoreo"
+}

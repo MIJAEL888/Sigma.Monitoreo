@@ -14,6 +14,32 @@
     <property name="uuidType" value="varchar(36)" dbms="h2, mysql, mariadb"/>
 
     <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190713071425_added_entity_Proyecto.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190713071426_added_entity_EquipoMonitoreo.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190713071427_added_entity_LaboratorioMonitoreo.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190713071428_added_entity_Observacion.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190713071429_added_entity_Componente.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190713071430_added_entity_TipoComponente.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190713071431_added_entity_Paramentro.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190713071432_added_entity_NormaCalidad.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190713071433_added_entity_PuntoMonitoreo.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190713071434_added_entity_PuntoMonitoreoObs.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190713071435_added_entity_FotografiaPunto.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190713071436_added_entity_FotografiaMonitoreo.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190713071437_added_entity_Unidades.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190713071438_added_entity_Resultado.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190713071439_added_entity_ResultadoEmisiones.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190713071440_added_entity_ResultadoMetereologia.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20190713071426_added_entity_constraints_EquipoMonitoreo.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190713071427_added_entity_constraints_LaboratorioMonitoreo.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190713071428_added_entity_constraints_Observacion.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190713071430_added_entity_constraints_TipoComponente.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190713071431_added_entity_constraints_Paramentro.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190713071434_added_entity_constraints_PuntoMonitoreoObs.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190713071435_added_entity_constraints_FotografiaPunto.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190713071436_added_entity_constraints_FotografiaMonitoreo.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190713071439_added_entity_constraints_ResultadoEmisiones.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190713071440_added_entity_constraints_ResultadoMetereologia.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
 </databaseChangeLog>

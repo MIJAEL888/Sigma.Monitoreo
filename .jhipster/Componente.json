@@ -1,0 +1,58 @@
+{
+    "name": "Componente",
+    "fields": [
+        {
+            "fieldName": "nombre",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "descripcion",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "protocolo",
+            "fieldType": "byte[]",
+            "fieldTypeBlobContent": "text"
+        },
+        {
+            "fieldName": "guia",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "iso",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "objetivos",
+            "fieldType": "byte[]",
+            "fieldTypeBlobContent": "text"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "tipoComponente",
+            "otherEntityRelationshipName": "componente",
+            "relationshipName": "tipoComponente"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "observacion",
+            "otherEntityRelationshipName": "componente",
+            "relationshipName": "observacion"
+        }
+    ],
+    "changelogDate": "20190713071429",
+    "entityTableName": "componente",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "monitoreo",
+    "applications": "*",
+    "microserviceName": "monitoreo"
+}

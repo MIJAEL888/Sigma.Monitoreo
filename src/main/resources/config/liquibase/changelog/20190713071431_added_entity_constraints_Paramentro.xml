@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <!--
+        Added the constraints for entity Paramentro.
+    -->
+    <changeSet id="20190713071431-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="tipo_componente_id"
+                                 baseTableName="paramentro"
+                                 constraintName="fk_paramentro_tipo_componente_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="tipo_componente"/>
+
+        <addForeignKeyConstraint baseColumnNames="norma_calidad_id"
+                                 baseTableName="paramentro"
+                                 constraintName="fk_paramentro_norma_calidad_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="norma_calidad"/>
+
+        <addForeignKeyConstraint baseColumnNames="punto_monitoreo_id"
+                                 baseTableName="paramentro"
+                                 constraintName="fk_paramentro_punto_monitoreo_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="punto_monitoreo"/>
+
+        <addForeignKeyConstraint baseColumnNames="unidades_id"
+                                 baseTableName="paramentro"
+                                 constraintName="fk_paramentro_unidades_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="unidades"/>
+
+    </changeSet>
+</databaseChangeLog>

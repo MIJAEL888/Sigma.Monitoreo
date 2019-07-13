@@ -41,6 +41,37 @@ public class CacheConfiguration {
     @Bean
     public JCacheManagerCustomizer cacheManagerCustomizer() {
         return cm -> {
+            createCache(cm, com.sigma.domain.Proyecto.class.getName());
+            createCache(cm, com.sigma.domain.Proyecto.class.getName() + ".puntoMonitoreos");
+            createCache(cm, com.sigma.domain.Proyecto.class.getName() + ".equipos");
+            createCache(cm, com.sigma.domain.Proyecto.class.getName() + ".observacions");
+            createCache(cm, com.sigma.domain.Proyecto.class.getName() + ".laboratorios");
+            createCache(cm, com.sigma.domain.EquipoMonitoreo.class.getName());
+            createCache(cm, com.sigma.domain.LaboratorioMonitoreo.class.getName());
+            createCache(cm, com.sigma.domain.Observacion.class.getName());
+            createCache(cm, com.sigma.domain.Componente.class.getName());
+            createCache(cm, com.sigma.domain.Componente.class.getName() + ".tipoComponentes");
+            createCache(cm, com.sigma.domain.Componente.class.getName() + ".observacions");
+            createCache(cm, com.sigma.domain.TipoComponente.class.getName());
+            createCache(cm, com.sigma.domain.TipoComponente.class.getName() + ".paramentros");
+            createCache(cm, com.sigma.domain.Paramentro.class.getName());
+            createCache(cm, com.sigma.domain.NormaCalidad.class.getName());
+            createCache(cm, com.sigma.domain.NormaCalidad.class.getName() + ".paramentros");
+            createCache(cm, com.sigma.domain.PuntoMonitoreo.class.getName());
+            createCache(cm, com.sigma.domain.PuntoMonitoreo.class.getName() + ".puntoMonitoreoObs");
+            createCache(cm, com.sigma.domain.PuntoMonitoreo.class.getName() + ".paramentros");
+            createCache(cm, com.sigma.domain.PuntoMonitoreo.class.getName() + ".fotografiaPuntos");
+            createCache(cm, com.sigma.domain.PuntoMonitoreoObs.class.getName());
+            createCache(cm, com.sigma.domain.PuntoMonitoreoObs.class.getName() + ".fotografiaMonitoreos");
+            createCache(cm, com.sigma.domain.FotografiaPunto.class.getName());
+            createCache(cm, com.sigma.domain.FotografiaMonitoreo.class.getName());
+            createCache(cm, com.sigma.domain.Unidades.class.getName());
+            createCache(cm, com.sigma.domain.Unidades.class.getName() + ".paramentros");
+            createCache(cm, com.sigma.domain.Resultado.class.getName());
+            createCache(cm, com.sigma.domain.Resultado.class.getName() + ".resultadoEmisiones");
+            createCache(cm, com.sigma.domain.Resultado.class.getName() + ".resultadoMetereologias");
+            createCache(cm, com.sigma.domain.ResultadoEmisiones.class.getName());
+            createCache(cm, com.sigma.domain.ResultadoMetereologia.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

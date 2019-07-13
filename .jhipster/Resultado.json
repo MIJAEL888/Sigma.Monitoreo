@@ -1,0 +1,68 @@
+{
+    "name": "Resultado",
+    "fields": [
+        {
+            "fieldName": "fechaInicio",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "fehcaFin",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "valorMinimo",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "valorMaximo",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "valorFinal",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "valorFinalNum",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "codigoLaboratorio",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "codigoEquipo",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "resultadoEmisiones",
+            "otherEntityRelationshipName": "resultado",
+            "relationshipName": "resultadoEmisiones"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "resultadoMetereologia",
+            "otherEntityRelationshipName": "resultado",
+            "relationshipName": "resultadoMetereologia"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "puntoMonitoreoObs",
+            "otherEntityRelationshipName": "resultado",
+            "relationshipName": "puntoMonitoreoObs",
+            "ownerSide": false
+        }
+    ],
+    "changelogDate": "20190713071438",
+    "entityTableName": "resultado",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "monitoreo",
+    "applications": "*",
+    "microserviceName": "monitoreo"
+}

@@ -1,0 +1,93 @@
+{
+    "name": "PuntoMonitoreo",
+    "fields": [
+        {
+            "fieldName": "codigo",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "codigoSede",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "codigoCliente",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "coordenadaNorte",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "coordenadaEste",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "descripcion",
+            "fieldType": "byte[]",
+            "fieldTypeBlobContent": "text"
+        },
+        {
+            "fieldName": "comentario",
+            "fieldType": "byte[]",
+            "fieldTypeBlobContent": "text"
+        },
+        {
+            "fieldName": "latitud",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "longitud",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "observacion",
+            "fieldType": "byte[]",
+            "fieldTypeBlobContent": "text"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "puntoMonitoreoObs",
+            "otherEntityRelationshipName": "puntoMonitoreo",
+            "relationshipName": "puntoMonitoreoObs"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "paramentro",
+            "otherEntityRelationshipName": "puntoMonitoreo",
+            "relationshipName": "paramentro"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "fotografiaPunto",
+            "otherEntityRelationshipName": "puntoMonitoreo",
+            "relationshipName": "fotografiaPunto"
+        }
+    ],
+    "changelogDate": "20190713071433",
+    "entityTableName": "punto_monitoreo",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "monitoreo",
+    "applications": "*",
+    "microserviceName": "monitoreo"
+}

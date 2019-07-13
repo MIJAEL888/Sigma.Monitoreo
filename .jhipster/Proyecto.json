@@ -1,0 +1,76 @@
+{
+    "name": "Proyecto",
+    "fields": [
+        {
+            "fieldName": "codigo",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "codigoSolicitud",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "codigoResponsable",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "estado",
+            "fieldType": "EstadoProyecto",
+            "fieldValues": "REGISTRADO,PLANIFICADO,MONITOREADO,FINALIZADO"
+        },
+        {
+            "fieldName": "fechaIncio",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "fechaFina",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "descripcion",
+            "fieldType": "byte[]",
+            "fieldTypeBlobContent": "text"
+        },
+        {
+            "fieldName": "comentario",
+            "fieldType": "byte[]",
+            "fieldTypeBlobContent": "text"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "puntoMonitoreoObs",
+            "otherEntityRelationshipName": "proyecto",
+            "relationshipName": "puntoMonitoreo"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "equipoMonitoreo",
+            "otherEntityRelationshipName": "proyecto",
+            "relationshipName": "equipo"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "observacion",
+            "otherEntityRelationshipName": "proyecto",
+            "relationshipName": "observacion"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "laboratorioMonitoreo",
+            "otherEntityRelationshipName": "proyecto",
+            "relationshipName": "laboratorio"
+        }
+    ],
+    "changelogDate": "20190713071425",
+    "entityTableName": "proyecto",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "monitoreo",
+    "applications": "*",
+    "microserviceName": "monitoreo"
+}
